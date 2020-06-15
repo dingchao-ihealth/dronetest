@@ -1,4 +1,6 @@
-pipeline:
-    test:
-        image: python:latest
-        command: python test.py
+kind: pipeline
+name: default
+steps:
+- name: frontend
+    image: python:latest
+    command: python test.py
