@@ -1,13 +1,12 @@
 kind: pipeline
+type: exec
 name: default
 
 platform:
-    os: linux
-    arch: arm
+  os: linux
+  arch: amd64
 
 steps:
-- name: test
-  image: node
+- name: greeting
   commands:
-  - npm install
-  - npm test
+  - echo hello world
