@@ -1,6 +1,8 @@
 kind: pipeline
+type: exec
 name: default
+
 steps:
-- name: frontend
-    image: python:latest
-    command: python test.py
+- name: greeting
+  commands:
+  - echo hello world
