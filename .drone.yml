@@ -1,7 +1,7 @@
 kind: pipeline
-name: default
-
 steps:
-- name: greeting
+- name: test
+  image: node
   commands:
-  - echo hello world
+  - npm install
+  - npm test
