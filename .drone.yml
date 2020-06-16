@@ -6,3 +6,7 @@ steps:
   commands: 
     - echo "done"
     - git remote -v
+    
+trigger:
+  branch:
+  - master
